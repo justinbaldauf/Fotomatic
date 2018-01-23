@@ -134,32 +134,41 @@ main {
   border-radius: .25rem;
   border: 1px solid #979797;
   margin-left: 6.25rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #9DC20A;
   color: white;
+  line-height: 1.4;
 }
 
-.green-box h2 {
+.instant-format-wrap {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  line-height: 1.4;
+  border: 1px black dotted;
+}
+
+.instant-format-wrap h2 {
   font-family: "Damion", cursive;
   font-size: 2.25rem;
-  padding-top: 2rem;
-}
-
-.green-box h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 3.125rem;
-  line-height: 1.4;
-  padding-top: .75rem;
   padding-bottom: .75rem;
 }
 
-.green-box h3 {
+.instant-format-wrap h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3.125rem;
+}
+
+ .green-box h3 {
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
-  line-height: 1.4;
-  padding: 0 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: .75rem;
   text-align: center;
 }
 
@@ -173,4 +182,41 @@ main {
   justify-content: center;
   margin-top: 1.625rem;
   margin-bottom: 3.5rem;
+}
+
+.join-button p {
+  font-size: 1.25rem;
+}
+
+/* hide tablet content under default screen size */
+.tablet {
+  display: none;
+}
+
+/* for screen width of 1024px or smaller: */
+@media only screen and (max-width: 1024px) {
+
+  .green-box {
+  display: none;
+  }
+
+  .tablet {
+  display: block;
+  }
+
+  .landing-page {
+  justify-content: center;
+  }
+}
+
+/* for screen width of 520px or smaller: */
+@media only screen and (max-width: 520px) {
+
+  .instant-format-wrap h1 {
+    font-size: 2rem;
+  }
+
+  .instant-format-wrap h2 {
+    font-size: 1.75rem;
+  }
 }
