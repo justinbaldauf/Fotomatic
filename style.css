@@ -36,7 +36,7 @@ header nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px red solid;
+  border: 2px red solid;
 }
 
 nav li {
@@ -75,12 +75,6 @@ header .desktop .button {
   display: block;
   }
 
-header .desktop {
-  display: flex;
-  align-items: center;
-  }
-}
-
 /* for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
 
@@ -96,6 +90,7 @@ header .desktop {
     margin: 0;
   }
 
+  /* .mobile must be displayed because the default is display: none */
   header .mobile {
     display: block;
     width: 100%;
