@@ -74,6 +74,7 @@ header .desktop .button {
 header .desktop .button {
   display: block;
   }
+}
 
 /* for screen width of 520px or smaller: */
 @media only screen and (max-width: 520px) {
@@ -103,4 +104,73 @@ header .desktop .button {
   nav li {
     padding: 0;
   }
+}
+
+/* main section  */
+
+main {
+  top: 5.3125rem; /* To offset for fixed header. */
+  position: relative;
+}
+
+.landing-page {
+  height: 43.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* padding-top: 1rem; */
+  /* note: using margin-top instead of padding -> 1rem of empty space above background image */
+  background-image: url("./images/banner-landingpage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* green box content */
+
+.green-box {
+  width: 35.5rem;
+  height: auto;
+  border-radius: .25rem;
+  border: 1px solid #979797;
+  margin-left: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9DC20A;
+  color: white;
+}
+
+.green-box h2 {
+  font-family: "Damion", cursive;
+  font-size: 2.25rem;
+  padding-top: 2rem;
+}
+
+.green-box h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3.125rem;
+  line-height: 1.4;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.green-box h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.join-button {
+  width: 25.5rem;
+  height: 4rem;
+  background-color: #4A4A4A;
+  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.625rem;
+  margin-bottom: 3.5rem;
 }
