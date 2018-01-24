@@ -111,6 +111,7 @@ header .desktop .button {
 main {
   top: 5.3125rem; /* To offset for fixed header. */
   position: relative;
+  /* height: auto; */
 }
 
 .landing-page {
@@ -118,8 +119,6 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  /* padding-top: 1rem; */
-  /* note: using margin-top instead of padding -> 1rem of empty space above background image */
   background-image: url("./images/banner-landingpage.jpg");
   background-position: center;
   background-size: cover;
@@ -220,3 +219,49 @@ main {
     font-size: 1.75rem;
   }
 }
+
+/* middle section */
+
+.middle-background {
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: WhiteSmoke;
+}
+
+.box-wrap {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-box {
+  height: 39.6875rem;
+  width: 37.5rem;
+  background-color: white;
+  border: 1px black solid;
+}
+
+.image-box img {
+  height: 65%;
+  width: 90%;
+  margin: auto;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+
+/*
+.landing-page {
+  height: 43.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("./images/banner-landingpage.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
