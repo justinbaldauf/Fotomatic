@@ -58,22 +58,18 @@ header .icon {
   background-color: #9DC20B;
   padding: 4px 10px;
   border-radius: 4px;
+  display: none;
 }
 
 header .mobile {
   display: none;
 }
 
-header .desktop .button {
-  display: none;
-}
-
 /* for screen width of 1024px or smaller: */
 @media only screen and (max-width: 1024px) {
 
-header .desktop .button {
+.button {
   display: block;
-  }
 }
 
 /* for screen width of 520px or smaller: */
