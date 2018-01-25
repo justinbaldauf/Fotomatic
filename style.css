@@ -409,15 +409,41 @@ main {
     border: 2px red solid;
   }
 
-  .quote-section h1 {
+  .quote-section-wrap {
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black dashed;
+  }
+
+  .quote-section-wrap h1 {
     color: #4A4A4A;
     font-size: 1.875rem;
     font-family: Palantino-Italic;
     line-height: 1.1;
-    margin-right: 1.875rem;
   }
 
-  .quote-section img {
+  .quote-section-wrap img {
     padding-left: 1.875rem;
     vertical-align: bottom;
+  }
+
+  /* for screen width of 520px or smaller: */
+  @media only screen and (max-width: 520px) {
+
+    .quote-section-wrap {
+      flex-direction: column;
+    }
+
+    .quote-section-wrap h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .quote-section-wrap img {
+      padding-left: 0;
+      padding-top: 1rem;
+    }
   }
